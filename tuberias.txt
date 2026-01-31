@@ -1,0 +1,15 @@
+Neufuén;Rionegra;T-01;100;274;500;ACTIVO
+Neufuén;Solandina;T-02;150;387;600;ACTIVO
+Neufuén;Terraviva;T-03;200;443;700;ACTIVO
+Neufuén;Bosquemonte;T-04;50;148;300;EN REPARACIÓN
+Cupral-Có;Piedraluna;T-05;100;312;400;ACTIVO
+Cupral-Có;Terraviva;T-06;150;431;550;ACTIVO
+Cupral-Có;Valleverde;T-07;120;268;450;EN DISEÑO
+Maravélica;Terraviva;T-08;180;456;600;ACTIVO
+Maravélica;Bosquemonte;T-09;60;164;350;ACTIVO
+Maravélica;Monteaurora;T-10;200;460;700;INACTIVO
+Rionegra;Ventisquero Alto;T-11;100;300;400;ACTIVO
+Solandina;Monteaurora;T-12;110;290;420;ACTIVO
+Cieloflor;Neufuén;T-13;150;400;500;ACTIVO
+Ventisquero Alto;Cieloflor;T-14;100;250;400;ACTIVO
+Piedraluna;Maravélica;T-15;120;320;450;ACTIVO
