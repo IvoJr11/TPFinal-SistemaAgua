@@ -6,9 +6,8 @@ import TP0.sistema.GestorArchivos;
 import TP0.modelo.Ciudad;
 import TP0.estructuras.Lista;
 
-/**
- * Clase encargada de la interacción con el usuario.
- */
+// Clase encargada de generar el menú principal del sistema.
+
 public class Menu {
 
     private SistemaRedAgua sistema;
@@ -46,7 +45,7 @@ public class Menu {
         System.out.println("12. Alta de nueva Ciudad (Manual)");
         System.out.println("13. Camino evitando una Ciudad");
         System.out.println("14. Todos los caminos filtrados por Caudal");
-        System.out.println("15. Aprovisionamiento y Habitantes por Año/Mes");
+        System.out.println("15. Historial de ciudades");
         System.out.println("0.  Salir");
     }
 
@@ -105,8 +104,9 @@ public class Menu {
         }
     }
 
-    // --- MÉTODOS DE ACCIÓN (Ordenados por funcionalidad) ---
+    // --- MÉTODOS DE ACCIÓN ---
 
+    // Método para cargar los datos iniciales
     private void ejecutarCargaInicial() {
         String rutaCiudades = "ciudades.txt";
         String rutaTuberias = "tuberias.txt";
@@ -118,6 +118,7 @@ public class Menu {
         gestorArchivos.registrarLog(sistema.toString());
     }
 
+    // Método para consultar una ciudad
     private void ejecutarConsultaCiudad() {
         System.out.println("--- CONSULTA DE CIUDAD ---");
         scanner.nextLine();
@@ -144,6 +145,7 @@ public class Menu {
         }
     }
 
+    // Método para mostrar el ranking de consumo
     private void mostrarRanking() {
         System.out.println("--- RANKING DE CONSUMO (Último Mes) ---");
         Lista ranking = sistema.generarRankingConsumo();
@@ -162,6 +164,7 @@ public class Menu {
         }
     }
 
+    // Método para consultar camino mínimo de una ciudad a otra
     private void consultarCaminoMinimo() {
         scanner.nextLine();
         System.out.print("Ciudad Origen: ");
@@ -174,6 +177,7 @@ public class Menu {
         System.out.println(sistema.obtenerCaminoMinimo(origen, destino));
     }
 
+    // Método para modificar estado de una tubería
     private void modificarTuberia() {
         scanner.nextLine();
         System.out.println("\n--- MODIFICAR ESTADO TUBERÍA ---");
@@ -196,6 +200,7 @@ public class Menu {
         }
     }
 
+    // Método para dar de baja una ciudad
     private void bajaCiudad() {
         scanner.nextLine();
         System.out.println("\n--- BAJA DE CIUDAD ---");
@@ -216,6 +221,7 @@ public class Menu {
         }
     }
 
+    // Método para consultar ciudades por rango
     private void consultarCiudadPorRango() {
         scanner.nextLine();
         System.out.println("--- BÚSQUEDA POR RANGO ---");
@@ -248,6 +254,7 @@ public class Menu {
             System.out.println("Ninguna ciudad cumple con los criterios.");
     }
 
+    // Método para actualizar habitantes de una ciudad
     private void actualizarHabitantes() {
         scanner.nextLine();
         System.out.println("\n--- ACTUALIZAR POBLACIÓN ---");
@@ -272,6 +279,7 @@ public class Menu {
         }
     }
 
+    // Método para modificar datos de una ciudad
     private void modificarCiudad() {
         scanner.nextLine();
         System.out.println("\n--- MODIFICAR DATOS CIUDAD ---");
@@ -291,6 +299,7 @@ public class Menu {
         }
     }
 
+    // Método para consultar camino por caudal máximo
     private void consultarCaminoCaudal() {
         scanner.nextLine();
         System.out.println("\n--- CONSULTA DE CAMINO (OPTIMIZADO POR CAUDAL) ---");
@@ -304,6 +313,7 @@ public class Menu {
         System.out.println(sistema.obtenerCaminoCaudalMaximo(origen, destino));
     }
 
+    // Método para dar de alta una nueva ciudad
     private void altaCiudadManual() {
         scanner.nextLine();
         System.out.println("\n--- ALTA DE CIUDAD ---");
@@ -312,24 +322,24 @@ public class Menu {
 
         if (sistema.buscarCiudadPorNombre(nombre) != null) {
             System.out.println("Error: Ya existe una ciudad con ese nombre.");
-            return;
-        }
-
-        System.out.print("Código/Nomenclatura (Ej: N-01): ");
-        String codigo = scanner.nextLine().toUpperCase();
-        double superficie = leerDouble("Superficie: ");
-        double consumo = leerDouble("Consumo Promedio: ");
-
-        Ciudad nueva = new Ciudad(nombre, codigo, superficie, consumo);
-
-        if (sistema.agregarCiudad(nueva)) {
-            System.out.println("-> Ciudad agregada al sistema.");
-            gestorArchivos.registrarLog("Alta Manual: Ciudad " + nombre);
         } else {
-            System.out.println("-> Error al guardar.");
+            System.out.print("Código/Nomenclatura (Ej: N-01): ");
+            String codigo = scanner.nextLine().toUpperCase();
+            double superficie = leerDouble("Superficie: ");
+            double consumo = leerDouble("Consumo Promedio: ");
+
+            Ciudad nueva = new Ciudad(nombre, codigo, superficie, consumo);
+
+            if (sistema.agregarCiudad(nueva)) {
+                System.out.println("-> Ciudad agregada al sistema.");
+                gestorArchivos.registrarLog("Alta Manual: Ciudad " + nombre);
+            } else {
+                System.out.println("-> Error al guardar.");
+            }
         }
     }
 
+    // Método para consultar camino evitando una ciudad
     private void consultarCaminoEvasivo() {
         scanner.nextLine();
         System.out.println("\n--- CAMINO EVADIENDO CIUDAD ---");
@@ -344,6 +354,7 @@ public class Menu {
         System.out.println(sistema.obtenerCaminoEvitandoCiudad(org, des, ev));
     }
 
+    // Método para consultar todos los caminos filtrados por caudal
     private void consultarTodosFiltro() {
         scanner.nextLine();
         System.out.println("\n--- FILTRO DE CAMINOS POR CAUDAL ---");
@@ -365,33 +376,35 @@ public class Menu {
         System.out.println("Cerrando sistema...");
     }
 
+    // Método para mostrar el aprovisionamiento y habitantes de todas las ciudades en mes/año
     private void imprimirAprovisionamientoHabitante() {
         System.out.println("\n--- CONSULTA DE DISTRIBUCIÓN MENSUAL ---");
-        
+    
         int anio = leerEntero("Ingrese año (0-9): ");
         int mes = leerEntero("Ingrese mes (0-11): ");
 
-        if (anio < 0 || anio >= Ciudad.CANT_ANIOS || 
-            mes < 0 || mes >= Ciudad.CANT_MESES) {
-            System.out.println("Error: Fecha fuera de rango (10 años).");
-            return;
-        }
+        if (anio >= 0 && anio < Ciudad.CANT_ANIOS && 
+            mes >= 0 && mes < Ciudad.CANT_MESES) {
 
-        Lista ciudades = sistema.getCiudades();
-        int longitud = ciudades.longitud();
+            Lista ciudades = sistema.getCiudades(); 
+            int longitud = ciudades.longitud();
 
-        System.out.println("Resultados para Año " + anio + " / Mes " + mes + ":");
+            System.out.println("Resultados para Año " + anio + " / Mes " + mes + ":");
         
-        for (int i = 1; i <= longitud; i++) {
-            Ciudad ciudad = (Ciudad) ciudades.recuperar(i);
-            if (ciudad != null) {
-                double aprovisionamiento = ciudad.getAprovisionamiento(anio, mes);
-                int habitantes = ciudad.getHabitantes(anio, mes);
-                
-                System.out.println("Ciudad: " + String.format("%-15s", ciudad.getNombre()) + 
-                                " | Aprov: " + String.format("%10.2f", aprovisionamiento) + " m3" +
-                                " | Hab: " + habitantes);
+            for (int i = 1; i <= longitud; i++) {
+                Ciudad ciudad = (Ciudad) ciudades.recuperar(i);
+                if (ciudad != null) {
+                    double aprovisionamiento = ciudad.getAprovisionamiento(anio, mes);
+                    int habitantes = ciudad.getHabitantes(anio, mes);
+                    
+                    System.out.println("Ciudad: " + String.format("%-15s", ciudad.getNombre()) + 
+                                    " | Aprov: " + String.format("%10.2f", aprovisionamiento) + " m3" +
+                                    " | Hab: " + habitantes);
+                }
             }
+
+        } else {
+           System.out.println("Error: Fecha fuera de rango (10 años).");
         }
     }
 

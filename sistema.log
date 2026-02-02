@@ -191,9 +191,9 @@ CIELOFLOR ->
 
 3. TUBERIAS (DETALLE):
 {(NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0}
-[2026/01/31 15:17:23] Operación: Carga inicial de datos completada.
-[2026/01/31 15:17:23] --- ESTADO INICIAL DEL SISTEMA ---
-[2026/01/31 15:17:23] === ESTADO DEL SISTEMA ===
+[2026/01/31 15:20:53] Operación: Carga inicial de datos completada.
+[2026/01/31 15:20:53] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/01/31 15:20:53] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -226,16 +226,9 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 15:18:08] Operación: Generación de Ranking de Consumo.
-[2026/01/31 15:19:36] Operación: Consulta de camino mínimo entre RIONEGRA y BOSQUEMONTE
-[2026/01/31 15:21:02] Consulta: Camino Caudal Pleno RIONEGRA -> CIELOFLOR
-[2026/01/31 15:21:53] Consulta: Caminos RIONEGRA -> PIEDRALUNA con capacidad >= 200.0
-[2026/01/31 15:22:15] Consulta: Caminos NEUFEN -> TERRAVIVA con capacidad >= 20.0
-[2026/01/31 15:23:05] Consulta: Caminos PIEDRALUNA -> MARAVELICA con capacidad >= 20.0
-[2026/01/31 15:24:26] Consulta: Caminos PIEDRALUNA -> VALLEVERDE con capacidad >= 20.0
-[2026/01/31 15:24:34] Operación: Fin de ejecución.
-[2026/01/31 15:24:34] --- ESTADO FINAL DEL SISTEMA ---
-[2026/01/31 15:24:34] === ESTADO DEL SISTEMA ===
+[2026/01/31 16:42:14] Operación: Carga inicial de datos completada.
+[2026/01/31 16:42:14] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/01/31 16:42:14] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -268,9 +261,9 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 15:59:26] Operación: Carga inicial de datos completada.
-[2026/01/31 15:59:26] --- ESTADO INICIAL DEL SISTEMA ---
-[2026/01/31 15:59:26] === ESTADO DEL SISTEMA ===
+[2026/02/02 09:18:57] Operación: Carga inicial de datos completada.
+[2026/02/02 09:18:57] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 09:18:57] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -303,9 +296,9 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 16:00:23] Operación: Carga inicial de datos completada.
-[2026/01/31 16:00:23] --- ESTADO INICIAL DEL SISTEMA ---
-[2026/01/31 16:00:23] === ESTADO DEL SISTEMA ===
+[2026/02/02 09:20:08] Operación: Fin de ejecución.
+[2026/02/02 09:20:08] --- ESTADO FINAL DEL SISTEMA ---
+[2026/02/02 09:20:08] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -338,9 +331,9 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 16:02:42] Operación: Carga inicial de datos completada.
-[2026/01/31 16:02:43] --- ESTADO INICIAL DEL SISTEMA ---
-[2026/01/31 16:02:43] === ESTADO DEL SISTEMA ===
+[2026/02/02 10:01:32] Operación: Carga inicial de datos completada.
+[2026/02/02 10:01:32] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 10:01:32] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -373,9 +366,9 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 16:05:13] Operación: Carga inicial de datos completada.
-[2026/01/31 16:05:13] --- ESTADO INICIAL DEL SISTEMA ---
-[2026/01/31 16:05:13] === ESTADO DEL SISTEMA ===
+[2026/02/02 10:37:57] Operación: Fin de ejecución.
+[2026/02/02 10:37:57] --- ESTADO FINAL DEL SISTEMA ---
+[2026/02/02 10:37:57] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -408,9 +401,18 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 16:07:38] Operación: Carga inicial de datos completada.
-[2026/01/31 16:07:38] --- ESTADO INICIAL DEL SISTEMA ---
-[2026/01/31 16:07:38] === ESTADO DEL SISTEMA ===
+[2026/02/02 10:48:33] Operación: Carga inicial de datos completada.
+[2026/02/02 10:48:33] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 10:48:33] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+Árbol AVL Vacío
+2. RED (GRAFO):
+
+3. TUBERIAS (DETALLE):
+{}
+[2026/02/02 10:49:26] Operación: Carga inicial de datos completada.
+[2026/02/02 10:49:26] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 10:49:26] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -443,9 +445,9 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
-[2026/01/31 16:07:47] Operación: Fin de ejecución.
-[2026/01/31 16:07:47] --- ESTADO FINAL DEL SISTEMA ---
-[2026/01/31 16:07:47] === ESTADO DEL SISTEMA ===
+[2026/02/02 10:49:39] Operación: Fin de ejecución.
+[2026/02/02 10:49:39] --- ESTADO FINAL DEL SISTEMA ---
+[2026/02/02 10:49:39] === ESTADO DEL SISTEMA ===
 1. CIUDADES (AVL):
 RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
 MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
@@ -478,3 +480,289 @@ CIELOFLOR -> NEUFUEN (peso:400.0),
 
 3. TUBERIAS (DETALLE):
 {(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
+[2026/02/02 10:50:56] Operación: Carga inicial de datos completada.
+[2026/02/02 10:50:57] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 10:50:57] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+Árbol AVL Vacío
+2. RED (GRAFO):
+
+3. TUBERIAS (DETALLE):
+{}
+[2026/02/02 10:51:04] Operación: Carga inicial de datos completada.
+[2026/02/02 10:51:04] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 10:51:04] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+Árbol AVL Vacío
+2. RED (GRAFO):
+
+3. TUBERIAS (DETALLE):
+{}
+[2026/02/02 10:51:15] Operación: Fin de ejecución.
+[2026/02/02 10:51:15] --- ESTADO FINAL DEL SISTEMA ---
+[2026/02/02 10:51:15] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+Árbol AVL Vacío
+2. RED (GRAFO):
+
+3. TUBERIAS (DETALLE):
+{}
+[2026/02/02 10:55:08] Operación: Carga inicial de datos completada.
+[2026/02/02 10:55:08] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 10:55:08] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+Árbol AVL Vacío
+2. RED (GRAFO):
+
+3. TUBERIAS (DETALLE):
+{}
+[2026/02/02 11:12:59] Operación: Carga inicial de datos completada.
+[2026/02/02 11:12:59] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 11:12:59] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
+MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
+CUPRAL-CO (Alt: 2) HI: BOSQUEMONTE HD: FUENTELUZ
+BOSQUEMONTE (Alt: 1) HI: - HD: CIELOFLOR
+CIELOFLOR (Alt: 0) HI: - HD: -
+FUENTELUZ (Alt: 0) HI: - HD: -
+NEUFUEN (Alt: 1) HI: MONTEAURORA HD: PIEDRALUNA
+MONTEAURORA (Alt: 0) HI: - HD: -
+PIEDRALUNA (Alt: 0) HI: - HD: -
+TERRAVIVA (Alt: 2) HI: SOLANDINA HD: VALLEVERDE
+SOLANDINA (Alt: 0) HI: - HD: -
+VALLEVERDE (Alt: 1) HI: - HD: VENTISQUERO ALTO
+VENTISQUERO ALTO (Alt: 0) HI: - HD: -
+
+2. RED (GRAFO):
+NEUFUEN -> BOSQUEMONTE (peso:148.0), TERRAVIVA (peso:443.0), SOLANDINA (peso:387.0), RIONEGRA (peso:274.0), 
+RIONEGRA -> VENTISQUERO ALTO (peso:300.0), 
+SOLANDINA -> MONTEAURORA (peso:290.0), 
+TERRAVIVA -> 
+BOSQUEMONTE -> 
+CUPRAL-CO -> VALLEVERDE (peso:268.0), TERRAVIVA (peso:431.0), PIEDRALUNA (peso:312.0), 
+MARAVELICA -> MONTEAURORA (peso:460.0), BOSQUEMONTE (peso:164.0), TERRAVIVA (peso:456.0), 
+PIEDRALUNA -> MARAVELICA (peso:320.0), 
+VALLEVERDE -> 
+MONTEAURORA -> 
+FUENTELUZ -> 
+VENTISQUERO ALTO -> CIELOFLOR (peso:250.0), 
+CIELOFLOR -> NEUFUEN (peso:400.0), 
+
+3. TUBERIAS (DETALLE):
+{(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-268.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-164.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-274.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-387.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-148.0, Diametro: 300.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-312.0, Diametro: 400.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 200.0-443.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-431.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-456.0, Diametro: 600.0}
+[2026/02/02 13:50:52] Operación: Carga inicial de datos completada.
+[2026/02/02 13:50:52] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 13:50:52] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
+MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
+CUPRAL-CO (Alt: 2) HI: BOSQUEMONTE HD: GARGANTUA
+BOSQUEMONTE (Alt: 1) HI: ACUOPOLIS HD: CIELOFLOR
+ACUOPOLIS (Alt: 0) HI: - HD: -
+CIELOFLOR (Alt: 0) HI: - HD: -
+GARGANTUA (Alt: 1) HI: FUENTELUZ HD: KRIPTONITA
+FUENTELUZ (Alt: 0) HI: - HD: -
+KRIPTONITA (Alt: 0) HI: - HD: -
+NEUFUEN (Alt: 1) HI: MONTEAURORA HD: PIEDRALUNA
+MONTEAURORA (Alt: 0) HI: - HD: -
+PIEDRALUNA (Alt: 0) HI: - HD: -
+TERRAVIVA (Alt: 2) HI: SOLANDINA HD: VENTISQUERO ALTO
+SOLANDINA (Alt: 0) HI: - HD: -
+VENTISQUERO ALTO (Alt: 1) HI: VALLEVERDE HD: ZARAGOZA
+VALLEVERDE (Alt: 0) HI: - HD: -
+ZARAGOZA (Alt: 0) HI: - HD: -
+
+2. RED (GRAFO):
+NEUFUEN -> BOSQUEMONTE (peso:150.0), ACUOPOLIS (peso:800.0), TERRAVIVA (peso:100.0), SOLANDINA (peso:400.0), RIONEGRA (peso:300.0), 
+RIONEGRA -> VENTISQUERO ALTO (peso:300.0), 
+SOLANDINA -> MONTEAURORA (peso:290.0), 
+TERRAVIVA -> 
+BOSQUEMONTE -> 
+CUPRAL-CO -> VALLEVERDE (peso:250.0), TERRAVIVA (peso:450.0), PIEDRALUNA (peso:300.0), 
+MARAVELICA -> MONTEAURORA (peso:460.0), BOSQUEMONTE (peso:160.0), TERRAVIVA (peso:450.0), 
+PIEDRALUNA -> MARAVELICA (peso:320.0), 
+VALLEVERDE -> ZARAGOZA (peso:200.0), 
+MONTEAURORA -> 
+FUENTELUZ -> 
+VENTISQUERO ALTO -> CIELOFLOR (peso:250.0), 
+CIELOFLOR -> NEUFUEN (peso:400.0), 
+ACUOPOLIS -> TERRAVIVA (peso:500.0), 
+ZARAGOZA -> KRIPTONITA (peso:200.0), 
+KRIPTONITA -> NEUFUEN (peso:1000.0), 
+GARGANTUA -> 
+
+3. TUBERIAS (DETALLE):
+{(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (KRIPTONITA -> NEUFUEN)=Tuberia [T-18] Estado: ACTIVO, Caudal: 500.0-1000.0, Diametro: 1000.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-250.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-160.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (ZARAGOZA -> KRIPTONITA)=Tuberia [T-17] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-150.0, Diametro: 300.0, (NEUFUEN -> ACUOPOLIS)=Tuberia [T-XA] Estado: ACTIVO, Caudal: 200.0-800.0, Diametro: 900.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (ACUOPOLIS -> TERRAVIVA)=Tuberia [T-XB] Estado: ACTIVO, Caudal: 200.0-500.0, Diametro: 900.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (VALLEVERDE -> ZARAGOZA)=Tuberia [T-16] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 50.0-100.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-450.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-450.0, Diametro: 600.0}
+[2026/02/02 13:55:58] Operación: Fin de ejecución.
+[2026/02/02 13:55:58] --- ESTADO FINAL DEL SISTEMA ---
+[2026/02/02 13:55:58] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
+MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
+CUPRAL-CO (Alt: 2) HI: BOSQUEMONTE HD: GARGANTUA
+BOSQUEMONTE (Alt: 1) HI: ACUOPOLIS HD: CIELOFLOR
+ACUOPOLIS (Alt: 0) HI: - HD: -
+CIELOFLOR (Alt: 0) HI: - HD: -
+GARGANTUA (Alt: 1) HI: FUENTELUZ HD: KRIPTONITA
+FUENTELUZ (Alt: 0) HI: - HD: -
+KRIPTONITA (Alt: 0) HI: - HD: -
+NEUFUEN (Alt: 1) HI: MONTEAURORA HD: PIEDRALUNA
+MONTEAURORA (Alt: 0) HI: - HD: -
+PIEDRALUNA (Alt: 0) HI: - HD: -
+TERRAVIVA (Alt: 2) HI: SOLANDINA HD: VENTISQUERO ALTO
+SOLANDINA (Alt: 0) HI: - HD: -
+VENTISQUERO ALTO (Alt: 1) HI: VALLEVERDE HD: ZARAGOZA
+VALLEVERDE (Alt: 0) HI: - HD: -
+ZARAGOZA (Alt: 0) HI: - HD: -
+
+2. RED (GRAFO):
+NEUFUEN -> BOSQUEMONTE (peso:150.0), ACUOPOLIS (peso:800.0), TERRAVIVA (peso:100.0), SOLANDINA (peso:400.0), RIONEGRA (peso:300.0), 
+RIONEGRA -> VENTISQUERO ALTO (peso:300.0), 
+SOLANDINA -> MONTEAURORA (peso:290.0), 
+TERRAVIVA -> 
+BOSQUEMONTE -> 
+CUPRAL-CO -> VALLEVERDE (peso:250.0), TERRAVIVA (peso:450.0), PIEDRALUNA (peso:300.0), 
+MARAVELICA -> MONTEAURORA (peso:460.0), BOSQUEMONTE (peso:160.0), TERRAVIVA (peso:450.0), 
+PIEDRALUNA -> MARAVELICA (peso:320.0), 
+VALLEVERDE -> ZARAGOZA (peso:200.0), 
+MONTEAURORA -> 
+FUENTELUZ -> 
+VENTISQUERO ALTO -> CIELOFLOR (peso:250.0), 
+CIELOFLOR -> NEUFUEN (peso:400.0), 
+ACUOPOLIS -> TERRAVIVA (peso:500.0), 
+ZARAGOZA -> KRIPTONITA (peso:200.0), 
+KRIPTONITA -> NEUFUEN (peso:1000.0), 
+GARGANTUA -> 
+
+3. TUBERIAS (DETALLE):
+{(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (KRIPTONITA -> NEUFUEN)=Tuberia [T-18] Estado: ACTIVO, Caudal: 500.0-1000.0, Diametro: 1000.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-250.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-160.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (ZARAGOZA -> KRIPTONITA)=Tuberia [T-17] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-150.0, Diametro: 300.0, (NEUFUEN -> ACUOPOLIS)=Tuberia [T-XA] Estado: ACTIVO, Caudal: 200.0-800.0, Diametro: 900.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (ACUOPOLIS -> TERRAVIVA)=Tuberia [T-XB] Estado: ACTIVO, Caudal: 200.0-500.0, Diametro: 900.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (VALLEVERDE -> ZARAGOZA)=Tuberia [T-16] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 50.0-100.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-450.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-450.0, Diametro: 600.0}
+[2026/02/02 13:58:54] Operación: Carga inicial de datos completada.
+[2026/02/02 13:58:54] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 13:58:54] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
+MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
+CUPRAL-CO (Alt: 2) HI: BOSQUEMONTE HD: GARGANTUA
+BOSQUEMONTE (Alt: 1) HI: ACUOPOLIS HD: CIELOFLOR
+ACUOPOLIS (Alt: 0) HI: - HD: -
+CIELOFLOR (Alt: 0) HI: - HD: -
+GARGANTUA (Alt: 1) HI: FUENTELUZ HD: KRIPTONITA
+FUENTELUZ (Alt: 0) HI: - HD: -
+KRIPTONITA (Alt: 0) HI: - HD: -
+NEUFUEN (Alt: 1) HI: MONTEAURORA HD: PIEDRALUNA
+MONTEAURORA (Alt: 0) HI: - HD: -
+PIEDRALUNA (Alt: 0) HI: - HD: -
+TERRAVIVA (Alt: 2) HI: SOLANDINA HD: VENTISQUERO ALTO
+SOLANDINA (Alt: 0) HI: - HD: -
+VENTISQUERO ALTO (Alt: 1) HI: VALLEVERDE HD: ZARAGOZA
+VALLEVERDE (Alt: 0) HI: - HD: -
+ZARAGOZA (Alt: 0) HI: - HD: -
+
+2. RED (GRAFO):
+NEUFUEN -> BOSQUEMONTE (peso:150.0), ACUOPOLIS (peso:800.0), TERRAVIVA (peso:100.0), SOLANDINA (peso:400.0), RIONEGRA (peso:300.0), 
+RIONEGRA -> VENTISQUERO ALTO (peso:300.0), 
+SOLANDINA -> MONTEAURORA (peso:290.0), 
+TERRAVIVA -> 
+BOSQUEMONTE -> 
+CUPRAL-CO -> VALLEVERDE (peso:250.0), TERRAVIVA (peso:450.0), PIEDRALUNA (peso:300.0), 
+MARAVELICA -> MONTEAURORA (peso:460.0), BOSQUEMONTE (peso:160.0), TERRAVIVA (peso:450.0), 
+PIEDRALUNA -> MARAVELICA (peso:320.0), 
+VALLEVERDE -> ZARAGOZA (peso:200.0), 
+MONTEAURORA -> 
+FUENTELUZ -> 
+VENTISQUERO ALTO -> CIELOFLOR (peso:250.0), 
+CIELOFLOR -> NEUFUEN (peso:400.0), 
+ACUOPOLIS -> TERRAVIVA (peso:500.0), 
+ZARAGOZA -> KRIPTONITA (peso:200.0), 
+KRIPTONITA -> NEUFUEN (peso:1000.0), 
+GARGANTUA -> 
+
+3. TUBERIAS (DETALLE):
+{(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (KRIPTONITA -> NEUFUEN)=Tuberia [T-18] Estado: ACTIVO, Caudal: 500.0-1000.0, Diametro: 1000.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-250.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-160.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (ZARAGOZA -> KRIPTONITA)=Tuberia [T-17] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-150.0, Diametro: 300.0, (NEUFUEN -> ACUOPOLIS)=Tuberia [T-XA] Estado: ACTIVO, Caudal: 200.0-800.0, Diametro: 900.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (ACUOPOLIS -> TERRAVIVA)=Tuberia [T-XB] Estado: ACTIVO, Caudal: 200.0-500.0, Diametro: 900.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (VALLEVERDE -> ZARAGOZA)=Tuberia [T-16] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 50.0-100.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-450.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-450.0, Diametro: 600.0}
+[2026/02/02 14:25:07] Operación: Fin de ejecución.
+[2026/02/02 14:25:07] --- ESTADO FINAL DEL SISTEMA ---
+[2026/02/02 14:25:07] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
+MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
+CUPRAL-CO (Alt: 2) HI: BOSQUEMONTE HD: GARGANTUA
+BOSQUEMONTE (Alt: 1) HI: ACUOPOLIS HD: CIELOFLOR
+ACUOPOLIS (Alt: 0) HI: - HD: -
+CIELOFLOR (Alt: 0) HI: - HD: -
+GARGANTUA (Alt: 1) HI: FUENTELUZ HD: KRIPTONITA
+FUENTELUZ (Alt: 0) HI: - HD: -
+KRIPTONITA (Alt: 0) HI: - HD: -
+NEUFUEN (Alt: 1) HI: MONTEAURORA HD: PIEDRALUNA
+MONTEAURORA (Alt: 0) HI: - HD: -
+PIEDRALUNA (Alt: 0) HI: - HD: -
+TERRAVIVA (Alt: 2) HI: SOLANDINA HD: VENTISQUERO ALTO
+SOLANDINA (Alt: 0) HI: - HD: -
+VENTISQUERO ALTO (Alt: 1) HI: VALLEVERDE HD: ZARAGOZA
+VALLEVERDE (Alt: 0) HI: - HD: -
+ZARAGOZA (Alt: 0) HI: - HD: -
+
+2. RED (GRAFO):
+NEUFUEN -> BOSQUEMONTE (peso:150.0), ACUOPOLIS (peso:800.0), TERRAVIVA (peso:100.0), SOLANDINA (peso:400.0), RIONEGRA (peso:300.0), 
+RIONEGRA -> VENTISQUERO ALTO (peso:300.0), 
+SOLANDINA -> MONTEAURORA (peso:290.0), 
+TERRAVIVA -> 
+BOSQUEMONTE -> 
+CUPRAL-CO -> VALLEVERDE (peso:250.0), TERRAVIVA (peso:450.0), PIEDRALUNA (peso:300.0), 
+MARAVELICA -> MONTEAURORA (peso:460.0), BOSQUEMONTE (peso:160.0), TERRAVIVA (peso:450.0), 
+PIEDRALUNA -> MARAVELICA (peso:320.0), 
+VALLEVERDE -> ZARAGOZA (peso:200.0), 
+MONTEAURORA -> 
+FUENTELUZ -> 
+VENTISQUERO ALTO -> CIELOFLOR (peso:250.0), 
+CIELOFLOR -> NEUFUEN (peso:400.0), 
+ACUOPOLIS -> TERRAVIVA (peso:500.0), 
+ZARAGOZA -> KRIPTONITA (peso:200.0), 
+KRIPTONITA -> NEUFUEN (peso:1000.0), 
+GARGANTUA -> 
+
+3. TUBERIAS (DETALLE):
+{(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (KRIPTONITA -> NEUFUEN)=Tuberia [T-18] Estado: ACTIVO, Caudal: 500.0-1000.0, Diametro: 1000.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-250.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-160.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (ZARAGOZA -> KRIPTONITA)=Tuberia [T-17] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-150.0, Diametro: 300.0, (NEUFUEN -> ACUOPOLIS)=Tuberia [T-XA] Estado: ACTIVO, Caudal: 200.0-800.0, Diametro: 900.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (ACUOPOLIS -> TERRAVIVA)=Tuberia [T-XB] Estado: ACTIVO, Caudal: 200.0-500.0, Diametro: 900.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (VALLEVERDE -> ZARAGOZA)=Tuberia [T-16] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 50.0-100.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-450.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-450.0, Diametro: 600.0}
+[2026/02/02 14:28:28] Operación: Carga inicial de datos completada.
+[2026/02/02 14:28:28] --- ESTADO INICIAL DEL SISTEMA ---
+[2026/02/02 14:28:28] === ESTADO DEL SISTEMA ===
+1. CIUDADES (AVL):
+RIONEGRA (Alt: 4) HI: MARAVELICA HD: TERRAVIVA
+MARAVELICA (Alt: 3) HI: CUPRAL-CO HD: NEUFUEN
+CUPRAL-CO (Alt: 2) HI: BOSQUEMONTE HD: GARGANTUA
+BOSQUEMONTE (Alt: 1) HI: ACUOPOLIS HD: CIELOFLOR
+ACUOPOLIS (Alt: 0) HI: - HD: -
+CIELOFLOR (Alt: 0) HI: - HD: -
+GARGANTUA (Alt: 1) HI: FUENTELUZ HD: KRIPTONITA
+FUENTELUZ (Alt: 0) HI: - HD: -
+KRIPTONITA (Alt: 0) HI: - HD: -
+NEUFUEN (Alt: 1) HI: MONTEAURORA HD: PIEDRALUNA
+MONTEAURORA (Alt: 0) HI: - HD: -
+PIEDRALUNA (Alt: 0) HI: - HD: -
+TERRAVIVA (Alt: 2) HI: SOLANDINA HD: VENTISQUERO ALTO
+SOLANDINA (Alt: 0) HI: - HD: -
+VENTISQUERO ALTO (Alt: 1) HI: VALLEVERDE HD: ZARAGOZA
+VALLEVERDE (Alt: 0) HI: - HD: -
+ZARAGOZA (Alt: 0) HI: - HD: -
+
+2. RED (GRAFO):
+NEUFUEN -> BOSQUEMONTE (peso:150.0), ACUOPOLIS (peso:800.0), TERRAVIVA (peso:100.0), SOLANDINA (peso:400.0), RIONEGRA (peso:300.0), 
+RIONEGRA -> VENTISQUERO ALTO (peso:300.0), 
+SOLANDINA -> MONTEAURORA (peso:290.0), 
+TERRAVIVA -> 
+BOSQUEMONTE -> 
+CUPRAL-CO -> VALLEVERDE (peso:250.0), TERRAVIVA (peso:450.0), PIEDRALUNA (peso:300.0), 
+MARAVELICA -> MONTEAURORA (peso:460.0), BOSQUEMONTE (peso:160.0), TERRAVIVA (peso:450.0), 
+PIEDRALUNA -> MARAVELICA (peso:320.0), 
+VALLEVERDE -> ZARAGOZA (peso:200.0), 
+MONTEAURORA -> 
+FUENTELUZ -> 
+VENTISQUERO ALTO -> CIELOFLOR (peso:250.0), 
+CIELOFLOR -> NEUFUEN (peso:400.0), 
+ACUOPOLIS -> TERRAVIVA (peso:500.0), 
+ZARAGOZA -> KRIPTONITA (peso:200.0), 
+KRIPTONITA -> NEUFUEN (peso:1000.0), 
+GARGANTUA -> PIEDRALUNA (peso:200.0), 
+
+3. TUBERIAS (DETALLE):
+{(PIEDRALUNA -> MARAVELICA)=Tuberia [T-15] Estado: ACTIVO, Caudal: 120.0-320.0, Diametro: 450.0, (KRIPTONITA -> NEUFUEN)=Tuberia [T-18] Estado: ACTIVO, Caudal: 500.0-1000.0, Diametro: 1000.0, (CUPRAL-CO -> VALLEVERDE)=Tuberia [T-07] Estado: EN DISEÑO, Caudal: 120.0-250.0, Diametro: 450.0, (MARAVELICA -> BOSQUEMONTE)=Tuberia [T-09] Estado: ACTIVO, Caudal: 60.0-160.0, Diametro: 350.0, (NEUFUEN -> RIONEGRA)=Tuberia [T-01] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 500.0, (CIELOFLOR -> NEUFUEN)=Tuberia [T-13] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 500.0, (GARGANTUA -> PIEDRALUNA)=Tuberia [T-19] Estado: EN DISEÑO, Caudal: 100.0-200.0, Diametro: 300.0, (ZARAGOZA -> KRIPTONITA)=Tuberia [T-17] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (RIONEGRA -> VENTISQUERO ALTO)=Tuberia [T-11] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (NEUFUEN -> SOLANDINA)=Tuberia [T-02] Estado: ACTIVO, Caudal: 150.0-400.0, Diametro: 600.0, (NEUFUEN -> BOSQUEMONTE)=Tuberia [T-04] Estado: EN REPARACIÓN, Caudal: 50.0-150.0, Diametro: 300.0, (NEUFUEN -> ACUOPOLIS)=Tuberia [T-XA] Estado: ACTIVO, Caudal: 200.0-800.0, Diametro: 900.0, (CUPRAL-CO -> PIEDRALUNA)=Tuberia [T-05] Estado: ACTIVO, Caudal: 100.0-300.0, Diametro: 400.0, (ACUOPOLIS -> TERRAVIVA)=Tuberia [T-XB] Estado: ACTIVO, Caudal: 200.0-500.0, Diametro: 900.0, (VENTISQUERO ALTO -> CIELOFLOR)=Tuberia [T-14] Estado: ACTIVO, Caudal: 100.0-250.0, Diametro: 400.0, (VALLEVERDE -> ZARAGOZA)=Tuberia [T-16] Estado: ACTIVO, Caudal: 100.0-200.0, Diametro: 300.0, (NEUFUEN -> TERRAVIVA)=Tuberia [T-03] Estado: ACTIVO, Caudal: 50.0-100.0, Diametro: 700.0, (MARAVELICA -> MONTEAURORA)=Tuberia [T-10] Estado: INACTIVO, Caudal: 200.0-460.0, Diametro: 700.0, (SOLANDINA -> MONTEAURORA)=Tuberia [T-12] Estado: ACTIVO, Caudal: 110.0-290.0, Diametro: 420.0, (CUPRAL-CO -> TERRAVIVA)=Tuberia [T-06] Estado: ACTIVO, Caudal: 150.0-450.0, Diametro: 550.0, (MARAVELICA -> TERRAVIVA)=Tuberia [T-08] Estado: ACTIVO, Caudal: 180.0-450.0, Diametro: 600.0}

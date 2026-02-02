@@ -8,10 +8,8 @@ import TP0.estructuras.GrafoEtiquetado;
 import TP0.estructuras.ArbolAVL;
 import TP0.estructuras.Lista;
 
-/**
- * Clase principal del dominio.
- * Coordina las estructuras de datos (Grafo, AVL y HashMap).
- */
+// Clase principal para manejar las estructuras de datos (Grafo, AVL y HashMap).
+
 public class SistemaRedAgua {
 
     private GrafoEtiquetado grafo;
@@ -108,6 +106,10 @@ public class SistemaRedAgua {
 
     // --- MÉTODOS DE CONSULTA BÁSICA ---
 
+    public Lista getCiudades() {
+        return this.ciudades.listar();
+    }
+
     public Ciudad buscarCiudadPorNombre(String nombre) {
         Ciudad encontrada = null;
         Object resultado = this.ciudades.recuperar(nombre);
@@ -130,7 +132,6 @@ public class SistemaRedAgua {
             arreglo[i] = (Ciudad) todas.recuperar(i + 1);
         }
 
-        // Ordenamiento Burbuja por Demanda Total (Último mes)
         int ultimoAnio = Ciudad.CANT_ANIOS - 1;
         int ultimoMes = Ciudad.CANT_MESES - 1;
 
@@ -139,7 +140,6 @@ public class SistemaRedAgua {
                 double demandaA = arreglo[j].getHabitantes(ultimoAnio, ultimoMes) * arreglo[j].getPromConsumo();
                 double demandaB = arreglo[j + 1].getHabitantes(ultimoAnio, ultimoMes) * arreglo[j + 1].getPromConsumo();
 
-                // Orden Ascendente
                 if (demandaA < demandaB) {
                     Ciudad temp = arreglo[j];
                     arreglo[j] = arreglo[j + 1];
@@ -324,10 +324,6 @@ public class SistemaRedAgua {
         if (capacidadMinima == Double.MAX_VALUE)
             capacidadMinima = 0.0;
         return capacidadMinima;
-    }
-
-    public Lista getCiudades() {
-        return this.ciudades.listar();
     }
 
     @Override
