@@ -9,38 +9,20 @@ public class GrafoEtiquetado {
 
     // --- MÉTODOS PÚBLICOS DE ESTRUCTURA ---
 
-    public NodoVert insertarVertice(Object nuevoElem) {
-        NodoVert aux = this.inicio;
-        NodoVert ultimo = null;
-        NodoVert resultado = null;
-        boolean encontrado = false;
-
-        while (aux != null && !encontrado) {
-            if (aux.getElem().equals(nuevoElem)) {
-                resultado = aux;
-                encontrado = true;
-            } else {
-                ultimo = aux;
-                aux = aux.getSigVertice();
-            }
+    public boolean insertarVertice(Object nuevoElem) {
+        NodoVert aux = this.ubicarVertice(nuevoElem);
+        boolean exito = false;
+        if (aux == null) {
+            this.inicio = new NodoVert(nuevoElem, this.inicio);
+            exito = true;
         }
-
-        if (!encontrado) {
-            NodoVert nuevo = new NodoVert(nuevoElem, null);
-            if (this.inicio == null) {
-                this.inicio = nuevo;
-            } else {
-                ultimo.setSigVertice(nuevo);
-            }
-            resultado = nuevo;
-        }
-        return resultado;
+        return exito;
     }
 
     public boolean insertarArco(Object origen, Object destino, double etiqueta) {
         boolean exito = false;
-        NodoVert vOrigen = insertarVertice(origen);
-        NodoVert vDestino = insertarVertice(destino);
+        NodoVert vOrigen = ubicarVertice(origen);
+        NodoVert vDestino = ubicarVertice(destino);
 
         if (vOrigen != null && vDestino != null) {
             NodoAdyEti actualPrimerAdy = (NodoAdyEti) vOrigen.getPrimerAdy();
@@ -52,64 +34,46 @@ public class GrafoEtiquetado {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        NodoVert auxV = this.inicio;
-        while (auxV != null) {
-            sb.append(auxV.getElem()).append(" -> ");
+        return toStringAux(this.inicio);
+    }
+
+    private String toStringAux(NodoVert auxV) {
+        String resultado = "";
+
+        if (auxV != null) {
+            String salidaPosterior = toStringAux(auxV.getSigVertice());
+
+            StringBuilder sbActual = new StringBuilder();
+            sbActual.append(auxV.getElem()).append(" -> ");
+
             NodoAdyEti auxA = (NodoAdyEti) auxV.getPrimerAdy();
             while (auxA != null) {
-                sb.append(auxA.getVerticeDestino().getElem())
+                sbActual.append(auxA.getVerticeDestino().getElem())
                         .append(" (peso:").append(auxA.getEtiqueta()).append("), ");
                 auxA = auxA.getSigAdyacente();
             }
-            sb.append("\n");
-            auxV = auxV.getSigVertice();
+            sbActual.append("\n");
+
+            resultado = salidaPosterior + sbActual.toString();
         }
-        return sb.toString();
+
+        return resultado;
     }
 
     // --- ALGORITMOS DE CAMINOS ---
 
     public Lista caminoMasCorto(Object origen, Object destino) {
         Lista caminoResultado = new Lista();
-        NodoVert vOrigen = buscarVertice(origen);
-        NodoVert vDestino = buscarVertice(destino);
+        NodoVert vOrigen = ubicarVertice(origen);
+        NodoVert vDestino = ubicarVertice(destino);
 
         if (vOrigen != null && vDestino != null) {
             Cola q = new Cola();
             Lista caminoInicial = new Lista();
             caminoInicial.insertar(origen, 1);
             q.poner(caminoInicial);
-
             Lista visitados = new Lista();
-            // Nota: Se podría usar visitados global o por nivel, aquí usamos BFS puro
-            boolean encontrado = false;
-
-            while (!q.esVacia() && !encontrado) {
-                Lista caminoActual = (Lista) q.obtenerFrente();
-                q.sacar();
-
-                Object verticeActualObj = caminoActual.recuperar(caminoActual.longitud());
-
-                if (verticeActualObj.equals(destino)) {
-                    caminoResultado = caminoActual;
-                    encontrado = true;
-                } else {
-                    NodoVert vActual = buscarVertice(verticeActualObj);
-                    visitados.insertar(verticeActualObj, visitados.longitud() + 1);
-
-                    NodoAdyEti auxAdy = (NodoAdyEti) vActual.getPrimerAdy();
-                    while (auxAdy != null) {
-                        Object vecino = auxAdy.getVerticeDestino().getElem();
-                        if (visitados.localizar(vecino) < 0 && caminoActual.localizar(vecino) < 0) {
-                            Lista nuevoCamino = caminoActual.clone();
-                            nuevoCamino.insertar(vecino, nuevoCamino.longitud() + 1);
-                            q.poner(nuevoCamino);
-                        }
-                        auxAdy = auxAdy.getSigAdyacente();
-                    }
-                }
-            }
+            caminoResultado = caminoResultadoAux(q, destino, visitados);
         }
         return caminoResultado;
     }
@@ -133,8 +97,8 @@ public class GrafoEtiquetado {
 
     public Lista caminoSinPasarPor(Object origen, Object destino, Object evitar) {
         Lista caminoResultado = new Lista();
-        NodoVert vOrigen = buscarVertice(origen);
-        NodoVert vDestino = buscarVertice(destino);
+        NodoVert vOrigen = ubicarVertice(origen);
+        NodoVert vDestino = ubicarVertice(destino);
 
         if (vOrigen != null && vDestino != null) {
             Cola q = new Cola();
@@ -145,31 +109,36 @@ public class GrafoEtiquetado {
             Lista visitados = new Lista();
             visitados.insertar(evitar, 1); // Marcamos 'evitar' como visitado
 
-            boolean encontrado = false;
+            caminoResultado = caminoResultadoAux(q, destino, visitados);
+        }
+        return caminoResultado;
+    }
 
-            while (!q.esVacia() && !encontrado) {
-                Lista caminoActual = (Lista) q.obtenerFrente();
-                q.sacar();
+    private Lista caminoResultadoAux(Cola cola, Object destino, Lista visitados) {
+        boolean encontrado = false;
+        Lista caminoResultado = new Lista();
+        while (!cola.esVacia() && !encontrado) {
+            Lista caminoActual = (Lista) cola.obtenerFrente();
+            cola.sacar();
 
-                Object verticeActualObj = caminoActual.recuperar(caminoActual.longitud());
+            Object verticeActualObj = caminoActual.recuperar(caminoActual.longitud());
 
-                if (verticeActualObj.equals(destino)) {
-                    caminoResultado = caminoActual;
-                    encontrado = true;
-                } else {
-                    NodoVert vActual = buscarVertice(verticeActualObj);
-                    visitados.insertar(verticeActualObj, visitados.longitud() + 1);
+            if (verticeActualObj.equals(destino)) {
+                caminoResultado = caminoActual;
+                encontrado = true;
+            } else {
+                NodoVert vActual = ubicarVertice(verticeActualObj);
+                visitados.insertar(verticeActualObj, visitados.longitud() + 1);
 
-                    NodoAdyEti auxAdy = (NodoAdyEti) vActual.getPrimerAdy();
-                    while (auxAdy != null) {
-                        Object vecino = auxAdy.getVerticeDestino().getElem();
-                        if (visitados.localizar(vecino) < 0 && caminoActual.localizar(vecino) < 0) {
-                            Lista nuevoCamino = caminoActual.clone();
-                            nuevoCamino.insertar(vecino, nuevoCamino.longitud() + 1);
-                            q.poner(nuevoCamino);
-                        }
-                        auxAdy = auxAdy.getSigAdyacente();
+                NodoAdyEti auxAdy = (NodoAdyEti) vActual.getPrimerAdy();
+                while (auxAdy != null) {
+                    Object vecino = auxAdy.getVerticeDestino().getElem();
+                    if (visitados.localizar(vecino) < 0 && caminoActual.localizar(vecino) < 0) {
+                        Lista nuevoCamino = caminoActual.clone();
+                        nuevoCamino.insertar(vecino, nuevoCamino.longitud() + 1);
+                        cola.poner(nuevoCamino);
                     }
+                    auxAdy = auxAdy.getSigAdyacente();
                 }
             }
         }
@@ -181,8 +150,8 @@ public class GrafoEtiquetado {
         Lista visitados = new Lista();
         Lista caminoActual = new Lista();
 
-        NodoVert vOrigen = buscarVertice(origen);
-        NodoVert vDestino = buscarVertice(destino);
+        NodoVert vOrigen = ubicarVertice(origen);
+        NodoVert vDestino = ubicarVertice(destino);
 
         if (vOrigen != null && vDestino != null) {
             buscarCaminosAux(vOrigen, destino, visitados, caminoActual, todos);
@@ -243,7 +212,7 @@ public class GrafoEtiquetado {
         double peso = 0.0;
         boolean encontrado = false;
 
-        NodoVert vOrigen = buscarVertice(origen);
+        NodoVert vOrigen = ubicarVertice(origen);
 
         if (vOrigen != null) {
             NodoAdyEti ady = (NodoAdyEti) vOrigen.getPrimerAdy();
@@ -263,7 +232,7 @@ public class GrafoEtiquetado {
         return peso;
     }
 
-    private NodoVert buscarVertice(Object buscado) {
+    private NodoVert ubicarVertice(Object buscado) {
         NodoVert aux = this.inicio;
         NodoVert resultado = null;
         boolean encontrado = false;
