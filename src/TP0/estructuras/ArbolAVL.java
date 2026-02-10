@@ -202,6 +202,7 @@ public class ArbolAVL {
         return y;
     }
 
+    // Este método debería estar en el NodoAVL
     private void actualizarAltura(NodoAVL n) {
         if (n != null) {
             n.setAltura(1 + Math.max(getAlt(n.getIzquierdo()), getAlt(n.getDerecho())));

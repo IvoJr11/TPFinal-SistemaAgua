@@ -84,6 +84,11 @@ public class GrafoEtiquetado {
         Lista todosLosCaminos = obtenerTodosLosCaminos(origen, destino);
         int cantCaminos = todosLosCaminos.longitud();
 
+        /*
+        No tiene sentido hacer el for, debería estar implementado junto con la recorrida de "obtenerTodosLosCaminos" 
+        para mejorar la eficiencia del código.
+        */
+
         for (int i = 1; i <= cantCaminos; i++) {
             Lista caminoCand = (Lista) todosLosCaminos.recuperar(i);
             double caudalPleno = calcularCaudalPleno(caminoCand);
@@ -161,6 +166,11 @@ public class GrafoEtiquetado {
 
     // --- MÉTODOS PRIVADOS AUXILIARES ---
 
+    /* 
+        REHACER para el Final
+        Buscar variantes de estos métodos como el camino con la suma de etiquetas más grande, el peso mejor a x, etc.
+        Se puede usar variantes para los demás recorridos (agregando controles) para optimizarlos.
+    */
     private void buscarCaminosAux(NodoVert actual, Object destino, Lista visitados, Lista caminoActual, Lista todos) {
         Object elemActual = actual.getElem();
 
@@ -180,6 +190,7 @@ public class GrafoEtiquetado {
             }
         }
 
+        // no tiene sentido tener ámbos caminos si tienen los mismos datos
         visitados.eliminar(visitados.longitud());
         caminoActual.eliminar(caminoActual.longitud());
     }

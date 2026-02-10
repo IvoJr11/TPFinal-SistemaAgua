@@ -65,7 +65,7 @@ public class SistemaRedAgua {
         }
     }
 
-    // --- MÉTODOS ABM (Altas, Bajas, Modificaciones) ---
+    // --- MÉTODOS PARA AGREGAR Y MODIFICAR ---
 
     public boolean agregarCiudad(Ciudad nuevaCiudad) {
         boolean exito = false;
@@ -100,6 +100,7 @@ public class SistemaRedAgua {
         return false;
     }
 
+    // Implementar el eliminar ciudad en el Grafo
     public boolean eliminarCiudad(String nombre) {
         return this.ciudades.eliminar(nombre);
     }

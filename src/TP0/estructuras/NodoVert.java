@@ -3,6 +3,7 @@ package TP0.estructuras;
 public class NodoVert {
     private Object elem;
     private NodoVert sigVertice;
+    // Esto debería ser Tipo NodoAdy
     private Object primerAdy;
 
     public NodoVert(Object elem, NodoVert sigVertice) {
